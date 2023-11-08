@@ -15,7 +15,12 @@
     // const boolArray:boolean[]=[true,false,true]
     const boolArray: GenericArray<boolean> = [true, false, true];
 
-    const user: GenericArray<{ name: string, age: number }> = [
+    interface User{
+        name:string;
+        age:number;
+    }
+
+    const user: GenericArray<User> = [
         {
             name: 'Raqib',
             age: 100
@@ -29,8 +34,21 @@
         //generic tuple 
         type GenericTuple<X,Y>=[X,Y]
 
+       
         const manus:GenericTuple<string,string> =['X','Y']
 
+
+      
+
+
         const UserWithID:GenericTuple<number,{name:string, email:string}> = [12345,{name:"Raqib", email:"raqib1345@gmail.com"}]
+
+     
+
+      
+
+
+
+        
 
 }
